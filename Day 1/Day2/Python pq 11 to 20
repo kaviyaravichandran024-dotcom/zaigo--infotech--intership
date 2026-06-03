@@ -1,0 +1,134 @@
+11. Palindrome Checker: Input a string or number and check if it reads the same 
+backwards.
+  
+# Works for both strings and numbers 
+data = input("Enter a string or number: ") 
+if data == data[::-1]: 
+print("It is a Palindrome") 
+Else: 
+print("Not a Palindrome") 
+  
+OUTPUT 
+Enter a string or number: 24 
+Not a Palindrome 
+  
+12. Armstrong Number: Check if a number is an Armstrong number (e.g., 153 = 1³ + 5³ + 
+3³). 
+  
+num = int(input("Enter a number: ")) 
+temp = num 
+sum_pow = 0 
+num_digits = len(str(num)) 
+while temp > 0: 
+digit = temp % 10 
+sum_pow += digit ** num_digits 
+temp //= 10 
+if num == sum_pow: 
+print("Armstrong Number") 
+else: 
+print("Not an Armstrong Number") 
+  
+OUTPUT 
+Enter a number: 24 
+Not an Armstrong Number
+  
+13. Prime Number Check: Check if the input number is prime.
+  
+num = int(input("Enter a number: ")) 
+is_prime = True 
+if num <= 1: 
+is_prime = False 
+else: 
+for i in range(2, int(num**0.5) + 1): 
+if num % i == 0: 
+is_prime = False 
+break 
+if is_prime: 
+print("Prime Number") 
+else: 
+print("Not a Prime Number") 
+  
+OUTPUT 
+Enter a number: 24 
+Not a Prime Number
+
+14. Count Digits in Number: Input a number and count the number of digits. 
+  
+num = int(input("Enter a number: ")) 
+print("Number of digits:", len(str(abs(num)))) 
+  
+OUTPUT 
+Enter a number: 24 
+Number of digits: 2
+  
+15. Reverse a Number: Input a number and print its reverse.
+  
+num = int(input("Enter a number: ")) 
+reversed_num = int(str(num)[::-1]) 
+print("Reversed number:", reversed_num) 
+  
+OUTPUT 
+Enter a number: 23 
+Reversed number: 32
+  
+  16. Count Vowels in a String: Count how many vowels are in the input string.
+  
+text = input("Enter a string: ") 
+vowels = "aeiouAEIOU" 
+count = 0 
+for char in text: 
+if char in vowels: 
+count += 1 
+print("Number of vowels:", count) 
+  
+OUTPUT 
+Enter a string: kaviya 
+Number of vowels: 3 
+  
+17. Remove Spaces: Input a string and print it without spaces.
+  
+text = input("Enter a string: ") 
+no_spaces = text.replace(" ", "") 
+print("Without spaces:", no_spaces) 
+  
+OUTPUT 
+Enter a string: Mugura 
+Without spaces: Mugura
+  
+  18. Capitalize First Letter of Each Word: Input: “hello world” → Output: “Hello World” 
+    
+text = input("Enter a string: ") 
+print("Capitalized:", text.title()) 
+    
+OUTPUT 
+Enter a string: pramee 
+Capitalized: Pramee 
+  
+19. Check Anagram: Input two strings and check if they are anagrams.
+  
+str1 = input("Enter first string: ") 
+str2 = input("Enter second string: ") 
+if sorted(str1.lower()) == sorted(str2.lower()): 
+print("They are Anagrams") 
+else: 
+print("Not Anagrams") 
+  
+OUTPUT 
+Enter first string: Saanvika 
+Enter second string: Sree 
+Not Anagrams 
+  
+  20. Check for Substring: Input string A and B, check if B is a substring of A
+    . 
+string_A = input("Enter main string (A): ") 
+string_B = input("Enter substring to check (B): ") 
+    
+if string_B in string_A: 
+print("B is a substring of A") 
+else: 
+print("B is NOT a substring of A" 
+      
+OUTPUT 
+Enter main string (A): Saanvika 
+Enter substring to check (B): sree 
+B is NOT a substring of A
