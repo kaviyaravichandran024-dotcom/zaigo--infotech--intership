@@ -1,0 +1,214 @@
+1. Even or Odd: Ask a number from the user and print whether it's even or odd. 
+# Check Even or Odd 
+
+  
+n = int(input("Enter a number: ")) 
+if n % 2: 
+print("Odd Number") 
+else: 
+print("Even Number")
+
+  
+OUTPUT 
+Enter a number :  34 
+Even Number 
+
+  
+2. Positive, Negative or Zero: Take a number input and print if it is positive, negative or  zero.
+
+  
+  # Check Positive, Negative or Zero 
+number = int(input("Enter a number: "))
+if number == 0: 
+print("The number is Zero") 
+elif number > 0: 
+print("The number is Positive") 
+else: 
+print("The number is Negative") 
+
+  
+OUTPUT 
+Enter a number : 54 
+The number is positive
+ 3. Simple Calculator: Ask for 2 numbers and an operator (+, -, *, /) and return the result.
+
+   
+# Calculator Program 
+a = int(input("Enter first number: ")) 
+b = int(input("Enter second number: ")) 
+print("1. Addition") 
+print("2. Subtraction") 
+print("3. Multiplication") 
+print("4. Division") 
+choice = int(input("Choose an operation (1-4): ")) 
+if choice == 1: 
+print("Answer =", a + b) 
+elif choice == 2: 
+print("Answer =", a - b) 
+elif choice == 3: 
+print("Answer =", a * b) 
+elif choice == 4: 
+print("Answer =", a / b) 
+else: 
+print("Invalid Choice") 
+
+  
+OUTPUT 
+Enter first number: 5 
+Enter second number: 88 
+1. Addition 
+2. Subtraction 
+3. Multiplication 
+4. Division 
+Choose an operation (1-4): 4 
+Answer = 0.056818181818181816
+
+  
+ 4. Find Maximum of 3 Numbers: Take 3 inputs and print the largest number.
+
+   
+a = int(input("Enter first number: ")) 
+b = int(input("Enter second number: ")) 
+c = int(input("Enter third number: ")) 
+largest = a 
+if b > largest: 
+largest = b 
+if c > largest: 
+largest = c 
+print("Largest Number =", largest) 
+
+   
+OUTPUT 
+Enter first number: 7 
+Enter second number: 55 
+Enter third number: 88 
+Largest Number = 88
+
+  
+  5. Check Leap Year: Ask for a year and print whether it is a leap year or not.
+
+    
+year = int(input("Enter a year: ")) 
+leap = False 
+if year % 4 == 0: 
+leap = True 
+if year % 100 == 0 and year % 400 != 0: 
+leap = False 
+if leap: 
+print(year, "is a Leap Year") 
+else: 
+print(year, "is Not a Leap Year") 
+
+    
+OUTPUT 
+Enter a year: 2032 
+2032 is a Leap Year
+
+    
+6. Print 1 to N: Input N, print all numbers from 1 to N using a loop.
+
+  
+# Get input from the user 
+n = int(input("Enter a number (N): ")) 
+# Loop from 1 to N 
+# range(1, n + 1) generates numbers starting from 1 up to and including N 
+for i in range(1, n + 1): 
+print(i) 
+
+  
+OUTPUT 
+Enter a number (N): 24 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+20 
+21 
+22 
+23 
+24
+ 7. Sum of N Numbers: Input N, find the sum of numbers from 1 to N. 
+   
+   
+def sum_of_n(n): 
+total = 0 
+for i in range(1, n + 1): 
+total += i 
+return total 
+# Example usage: 
+n = int(input("Enter a number (N): ")) 
+print(f"The sum of numbers from 1 to {n} is: 
+
+      
+OUTPUT 
+Enter a number (N): 34 
+The sum of numbers from 1 to 34 is: 595
+ 8. Multiplication Table: Print the multiplication table for a number.
+
+      
+def print_multiplication_table(number): 
+print(f"Multiplication Table for {number}:") 
+for i in range(1, 11): 
+product = number * i 
+print(f"{number} x {i} = {product}") 
+
+      
+OUTPUT 
+Enter a number to print its multiplication table: 34 
+Multiplication Table for 34: 
+34 x 1 = 34 
+34 x 2 = 68 
+34 x 3 = 102 
+34 x 4 = 136 
+34 x 5 = 170 
+34 x 6 = 204 
+34 x 7 = 238 
+34 x 8 = 272 
+34 x 9 = 306 
+34 x 10 = 340
+  9. Factorial of a Number: Input a number and print its factorial. 
+
+      
+def factorial(n): 
+if n < 0: 
+return "Factorial is not defined for negative numbers." 
+result = 1 
+for i in range(1, n + 1): 
+result *= i 
+return result 
+
+      
+OUTPUT 
+Enter a number: 45 
+The factorial of 45 is: 119622220865480194561963161495657715064383733760000000000
+
+      
+10. Fibonacci Series up to N terms: Input N, print first N Fibonacci numbers. 
+def factorial(n): 
+
+      
+if n < 0: 
+return "Factorial is not defined for negative numbers." 
+result = 1 
+for i in range(1, n + 1): 
+result *= i 
+return result 
+      
+OUTPUT 
+Enter a number: 45 
+The factorial of 45 is: 119622220865480194561963161495657715064383733760000000000      
